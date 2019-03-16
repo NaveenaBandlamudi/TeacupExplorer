@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TeaCup Explorer</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="./Styles/css/bootstrap.css" />
+    <!-- //bootstrap-css -->
+    <!-- Custom CSS -->
+    <link href="./Styles/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- font CSS -->
+    <link
+      href="//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="./Styles/css/font.css" type="text/css" />
+    <link href="./Styles/css/font-awesome.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./Styles/css/morris.css" />
+    <!-- //font-awesome icons -->
+    <script src="./Styles/js/jquery2.0.3.min.js"></script>
+    <script src="./Styles/js/modernizr.js"></script>
+    <script src="./Styles/js/jquery.cookie.js"></script>
+    <script src="./Styles/js/screenfull.js"></script>
+
+    <!-- charts -->
+    <script src="./Styles/js/raphael-min.js"></script>
+    <script src="./Styles/js/morris.js"></script>
+    <script src="./Styles/js/skycons.js"></script>
+    <script>
+      $(function() {
+        $("#supported").text("Supported/allowed: " + !!screenfull.enabled);
+
+        if (!screenfull.enabled) {
+          return false;
+        }
+
+        $("#toggle").click(function() {
+          screenfull.toggle($("#container")[0]);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <script>
+        var theme = $.cookie("protonTheme") || "default";
+        $("body").removeClass(function(index, css) {
+          return (css.match(/\btheme-\S+/g) || []).join(" ");
+        });
+        if (theme !== "default") $("body").addClass(theme);
+      </script>
+      <script src="./Styles/js/bootstrap.js"></script>
+      <script src="./Styles/js/proton.js"></script>
+    </div>
+  </body>
+</html>
