@@ -3,15 +3,14 @@ export default class Navbar extends Component {
   render() {
     return (
       <section className="wrapper scrollable">
-        <section className="title-bar">
+        <div className="title-bar">
           <div className="logo">
-            <a href="/">
-              <img
-                id="TeacupExplorerimage"
-                src="images/TeacupExplorerlogo.png"
-                alt=""
-              />
-            </a>
+            <h2 className="logoName">
+              {/* <a href="index.html">
+                <img src="images/TeacupExplorerlogo.png" alt="" />
+              </a> */}
+              Teacup Explorer
+            </h2>
           </div>
           <div className="full-screen">
             <section className="full-top">
@@ -25,9 +24,9 @@ export default class Navbar extends Component {
               <input
                 type="text"
                 name="search"
-                value="Search"
-                onfocus="this.value = '';"
-                onblur="if (this.value == '') {this.value = 'Search';}"
+                placeholder="Search"
+                // onFocus="this.value = '';"
+                //onBlur="if (this.value == '') {this.value = 'Search';}"
                 required=""
               />
               <button className="btn btn-default" type="submit">
@@ -183,6 +182,52 @@ export default class Navbar extends Component {
                     >
                       <div className="profile_img">
                         <span className="prfil-img">
+                          <img src="images/p1.png" alt="" />{" "}
+                        </span>
+                        <div className="user-name">
+                          <p>Naveena</p>
+                          <span>Administrator</span>
+                        </div>
+                        <i className="fa fa-angle-down lnr" />
+                        <i className="fa fa-angle-up lnr" />
+                        <div className="clearfix" />
+                      </div>
+                    </a>
+                    <ul className="dropdown-menu drp-mnu">
+                      <li>
+                        {" "}
+                        <a href="/">
+                          <i className="fa fa-cog" /> Settings
+                        </a>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <a href="/">
+                          <i className="fa fa-user" /> Profile
+                        </a>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <a href="/">
+                          <i className="fa fa-sign-out" /> Logout
+                        </a>{" "}
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              {/* <div className="profile_details">
+                <ul>
+                  <li className="dropdown profile_details_drop">
+                    <a
+                      href="/"
+                      className="dropdown-toggle"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <div className="profile_img">
+                        <span className="prfil-img">
                           <i className="fa fa-user" aria-hidden="true" />
                         </span>
                         <div className="clearfix" />
@@ -210,29 +255,11 @@ export default class Navbar extends Component {
                     </ul>
                   </li>
                 </ul>
-              </div>
+              </div>*/}
               <div className="clearfix"> </div>
             </div>
           </div>
           <div className="clearfix"> </div>
-        </section>
-        <div className="main-grid">
-          <div className="social grid">
-            <div className="grid-info">
-              <div className="col-md-3 top-comment-grid">
-                <div className="comments likes">
-                  <div className="comments-icon">
-                    <i className="fa fa-facebook" />
-                  </div>
-                  <div className="comments-info likes-info">
-                    <h3>95K</h3>
-                    <a href="/">Likes</a>
-                  </div>
-                  <div className="clearfix"> </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     );

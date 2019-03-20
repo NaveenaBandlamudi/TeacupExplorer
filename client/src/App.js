@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Sidebar from "./Components/Sidebar";
-//import ContentArea from "./Components/ContentArea";
+import Navbar from "./Components/layouts/Navbar";
+import Sidebar from "./Components/layouts/Sidebar";
+import ContentArea from "./Components/layouts/ContentArea";
 
 class App extends Component {
   render() {
@@ -10,6 +10,7 @@ class App extends Component {
       <div>
         <Navbar />
         <Sidebar />
+        <ContentArea />
       </div>
     );
   }

@@ -34,9 +34,9 @@ ul,label{
 	padding:0;
 }
 .title-bar{
-  background-color:#e0ebeb;
-  height:15%;
-  border-bottom-color: green;
+  background-color:#313335;
+  height:10%;
+  box-shadow: 2px 2px #b3f6ff;
   padding-top:5px;
 }
 
@@ -269,7 +269,7 @@ body a:hover{
 			-webkit-transition: width .05s linear;
 			transition: width .05s linear;
 			-webkit-transform: translateZ(0) scale(1,1);
-			background: #00bcd4;
+			background: #313335;
 			z-index: 11;
 		}
 		nav.main-menu>ul{margin:7px 0}
@@ -315,7 +315,7 @@ body a:hover{
 		}
 		.no-touch nav.main-menu li:hover>a,nav.main-menu li.active>a{color:#fff;background-color:#00acc1;}
 		.no-touch nav.main-menu li:hover ul,nav.main-menu li.active ul{width:210px}
-		nav.main-menu .nav-icon,i.fa.fa-home.nav_icon,i.fa.fa-cogs,i.fa.fa-check-square-o.nav_icon,i.fa.fa-file-text-o.nav_icon,i.fa.fa-bar-chart.nav_icon,i.fa.fa-map-marker,i.fa.fa-exclamation-triangle,i.fa.fa-list-ul{
+		nav.main-menu .nav-icon,i.fa.fa-plus,i.fa.fa-home.nav_icon,i.fa.fa-cogs,i.fa.fa-check-square-o.nav_icon,i.fa.fa-file-text-o.nav_icon,i.fa.fa-bar-chart.nav_icon,i.fa.fa-map-marker,i.fa.fa-exclamation-triangle,i.fa.fa-list-ul{
 			position:relative;display:table-cell;
 			width:60px;text-align:center;vertical-align:middle;font-size:18px;padding:.7em 0;
 		}
@@ -381,7 +381,7 @@ body a:hover{
 			color: #fff;}
 		nav.main-menu li li .subnav-text{display:table-cell;vertical-align:middle;padding-left:60px}
 		.no-touch nav.main-menu li:hover ul,nav.main-menu li.active ul{max-height:1000px}
-		nav.main-menu .nav-icon,i.fa.fa-home.nav_icon,i.fa.fa-cogs,i.fa.fa-check-square-o.nav_icon,i.fa.fa-file-text-o.nav_icon,i.fa.fa-bar-chart.nav_icon,i.fa.fa-map-marker,i.fa.fa-exclamation-triangle,i.fa.fa-list-ul{
+		nav.main-menu .nav-icon, i.fa.fa-plus,i.fa.fa-home.nav_icon,i.fa.fa-cogs,i.fa.fa-check-square-o.nav_icon,i.fa.fa-file-text-o.nav_icon,i.fa.fa-bar-chart.nav_icon,i.fa.fa-map-marker,i.fa.fa-exclamation-triangle,i.fa.fa-list-ul{
 			position:relative;display:table-cell;width:60px;
 			height:40px;text-align:center;vertical-align:middle;font-size:18px
 		}
@@ -468,8 +468,25 @@ body a:hover{
 		box-shadow:0 0 5px 0 rgba(0,0,0,0.05),0 4px 4px -3px rgba(0,0,0,0.1)
 	}
 .main-grid{
-    padding: 3em;
+    padding: 2em;
     height:100%;
+}
+p.text{
+  text-align: center;
+  color:black;
+  font-size:15px;
+}
+.container{
+  background: #caccce;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  height:100%;
+}
+#main-content{
+  padding-left:100px;
+  margin-top:100px;
+  width : 800px;
 }
 .dashboard-page .title-bar {
     position: relative;
@@ -479,9 +496,25 @@ body a:hover{
     box-shadow: 0 4px 10px -2px rgba(0,0,0,0.05);
     padding: 1em;
 }
+.content-wrap {
+  width: 81%;
+  margin-left: 100px;
+  background-color: white;
+  padding-top:100px;
+}
+.container-fluid {
+  height:100%;
+  padding-left: 40px;
+}
 .logo {
     float: left;
-    width: 15%;
+    color:white;
+}
+.logoName{
+  font-family:bold;
+padding-left:5px;
+font-family:Didone;
+font-family: initial;
 }
 .logo h1 a img {
     margin-right: .5em;
@@ -513,14 +546,14 @@ body a:hover{
     background: #f4f7f9;
     float: left;
 }	
-button.btn.btn-default{
-    outline: none;
-    padding: 10px 0 9px;
-    width: 15%;
-    position: relative;
-    background: #00bcd4;
-    border: solid 1px #00bcd4;
-    border-radius: 0;
+button.btn.btn-default {
+  outline: none;
+  padding: 10px 0 9px;
+  width: 15%;
+  position: relative;
+  background: #337ab7;
+  border: solid 1px #00bcd4;
+  border-radius: 0;
 }
 button.btn.btn-default i.fa.fa-search{
     color: #FFF;
@@ -547,13 +580,16 @@ button.btn.btn-default{
     padding: 10px 0 9px;
     width: 15%;
     position: relative;
-    background: #00bcd4;
-    border: solid 1px #00bcd4;
+    background: #337ab7;
+    border: solid 1px #3f7aad;
     border-radius: 0;
 }
 button.btn.btn-default i.fa.fa-search{
     color: #FFF;
     margin: 0;
+}
+.logo i.fa.fa-coffee {
+  color: #EB525D;
 }
 .full-screen{
     float: left;
@@ -563,9 +599,9 @@ button.btn.btn-default i.fa.fa-search{
 .full-screen button {
     border: none;
     outline: none;
-    color: #b9b9b9;
+    color: white;
     font-size: .875em;
-    background: #e8e8e8;
+    background: #337ab7;
     width: 41px;
     height: 41px;
     text-align: center;
@@ -642,20 +678,88 @@ li.active a i, .act a i {
 	padding: 5px;
 	text-decoration:none;
 }
-.header-right i.fa.fa-envelope{
-    color: #EB525D;
+/********* profile details **********/
+ul.dropdown-menu.drp-mnu i.fa {
+  margin-right: 0.5em;
 }
-i.fa.fa-bell{
-    color: #67D3E0;
+ul.dropdown-menu {
+  padding: 0;
+  min-width: 230px;
+  top:101%;
 }
-i.fa.fa-tasks{
-    color: #30BB74;
+.dropdown-menu > li > a {
+  padding: 3px 15px;
+font-size: 1em;
 }
+.profile_details {
+  float: right;
+}
+.profile_details_drop .fa.fa-angle-up{
+display:none;
+}
+.profile_details_drop.open .fa.fa-angle-up{
+  display:block;
+}
+.profile_details_drop.open .fa.fa-angle-down{
+display:none;
+}
+.profile_details_drop a.dropdown-toggle {
+  display:block;
+padding:0em 3em 0 1em;
+}
+.profile_img span.prfil-img{
+float:left;
+}
+.user-name{
+ float:left;
+ margin-top:7px;
+ margin-left:11px;
+ height:35px;
+}
+.profile_details ul li{
+list-style-type:none;
+position:relative;
+}
+.profile_details li a i.fa.lnr {
+  position: absolute;
+  top: 34%;
+  right: 8%;
+  color: #68AE00;
+  font-size: 1.6em;
+}
+.profile_details ul li ul.dropdown-menu.drp-mnu {
+  padding: 1em;
+  min-width: 190px;
+  top: 122%;
+  left:0%;
+}
+ul.dropdown-menu.drp-mnu li {
+  list-style-type: none;
+  padding: 3px 0;
+}
+.user-name p{
+font-size:1em;
+color:#FC8213;
+line-height:1em;
+font-weight:700;
+}
+.user-name span {
+  font-size: .75em;
+  font-style: italic;
+  color: #424f63;
+  font-weight: normal;
+  margin-top: .3em;
+}
+.profile_details ul {
+  padding: 0px;
+}
+
+
 .header-right span.badge {
     font-size: 11px;
     font-weight: bold;
     color: #ffffff;
-    background: #fcb216;
+    background: #FC8213;
     line-height: 15px;
     width: 20px;
     height: 20px;
@@ -967,7 +1071,7 @@ ul.nofitications-dropdown {
 }
 span.prfil-img i.fa.fa-user {
     color: #ffffff;
-    background: #00bcd4;
+    background-color: #337ab7;
     height: 41px;
     width: 41px;
     padding: .7em 0 0 0;
@@ -995,8 +1099,9 @@ ul.dropdown-menu.drp-mnu li {
     float: left;
 }
 .grid {
-	border: solid 10px #d8d8d8;
-    margin-bottom: 2em;
+  
+  border: 5px solid #b3f6ff;  
+    margin-bottom: 1em;
     background: #FFFFFF;
     height:100%;
 }
@@ -3339,6 +3444,43 @@ code {
   border-color:#E74225 !important;
   background:#E74225 !important;
 }
+.all-icons [class*="pe-"] {
+  font-size: 40px;
+}
+.all-icons input {
+  border: 2px;
+  width:110px;
+  text-align: center;
+  background: white;
+}
+.all-icons .font-icon-detail {
+  text-align: center;
+  padding: 25px 0px 20px;
+  border-radius: 6px;
+  margin: 15px 0;
+}
+.all-icons .font-icon-detail input {
+  margin: 10px auto 0;
+  width: 100%;font-size:20px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 13px;
+}
+[class^="pe-7s-"],
+[class*=" pe-7s-"] {
+  display: inline-block;
+  font-family: "Pe-icon-7-stroke";
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .control2{
   height:200px;
 }
@@ -4463,6 +4605,11 @@ div#vmap {
 		display: table-cell !important;
 		vertical-align: middle !important;
 	}
+}
+.folderButton{
+  padding: 0;
+border: none;
+background-color: white; 
 }
 @media(max-width:414px){
 	.logo {
