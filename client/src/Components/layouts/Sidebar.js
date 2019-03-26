@@ -7,22 +7,24 @@ export default class Sidebar extends Component {
         <nav className="main-menu">
           <ul>
             <li>
-              <i className="fa fa-plus" />
-              <span className="nav-text">New</span>
-              <i className="icon-angle-right" />
-              <i className="icon-angle-down" />
-              <ul>
-                <li>
-                  <a className="subnav-text" href="/">
-                    Folder
-                  </a>
-                </li>
-                <li>
-                  <a className="subnav-text" href="/">
-                    File
-                  </a>
-                </li>
-              </ul>
+              <a href="/">
+                <i className="fa fa-plus" />
+                <span className="nav-text">New</span>
+                <i className="icon-angle-right" />
+                <i className="icon-angle-down" />
+                <ul>
+                  <li>
+                    <a className="subnav-text" href="/">
+                      Folder
+                    </a>
+                  </li>
+                  <li>
+                    <a className="subnav-text" href="/">
+                      File
+                    </a>
+                  </li>
+                </ul>
+              </a>
             </li>
             <li>
               <a href="index.html">

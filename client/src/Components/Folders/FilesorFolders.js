@@ -130,13 +130,8 @@ export default class FilesorFolders extends Component {
             >
               <i className="fa fa-folder  fa-3x" aria-hidden="true" />
             </button>
-            {
-              <input
-                type="text"
-                value={item.name}
-                onChange={this.handleChange}
-              />
-            }
+
+            <input type="text" value={item.name} onChange={this.handleChange} />
           </div>
         ))}
       </div>
