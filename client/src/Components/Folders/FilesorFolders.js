@@ -15,31 +15,46 @@ export default class FilesorFolders extends Component {
           content: [
             {
               id: 1,
-              name: "a",
+              name: "1",
               date: "20/4",
               extension: ".doc",
               content: null
             },
             {
               id: 2,
-              name: "b",
+              name: "2",
               date: "20/4",
               extension: ".xml",
               content: null
             },
             {
               id: 3,
-              name: "c",
+              name: "3",
               date: "20/4",
               extension: ".zip",
               content: null
             },
             {
               id: 4,
-              name: "d",
+              name: "4",
               date: "20/4",
               extension: ".xlsx",
-              content: null
+              content: [
+                {
+                  id: 1,
+                  name: "apple",
+                  date: "20/4",
+                  extension: ".doc",
+                  content: null
+                },
+                {
+                  id: 2,
+                  name: "Boy",
+                  date: "20/4",
+                  extension: ".xml",
+                  content: null
+                }
+              ]
             }
           ]
         },
@@ -51,20 +66,20 @@ export default class FilesorFolders extends Component {
           content: [
             {
               id: 1,
-              name: "a",
+              name: "5",
               date: "20/4",
               extension: null,
               content: [
                 {
                   id: 1,
-                  name: "a",
+                  name: "6",
                   date: "20/4",
                   extension: ".doc",
                   content: null
                 },
                 {
                   id: 2,
-                  name: "b",
+                  name: "7",
                   date: "20/4",
                   extension: ".xml",
                   content: null
@@ -76,7 +91,28 @@ export default class FilesorFolders extends Component {
         { id: 5, name: "e", date: "20/4", extension: null, content: null }
       ]
     };
+
+    this.extractFiles = this.extractFiles.bind(this);
   }
+
+  handleChange(event) {
+    // this.setState({
+
+    // })
+    console.log(event.value);
+  }
+
+  extractFiles(item) {
+    console.log(item);
+    // check if content is an array or not
+    if (item.content && item.content.length > 0) {
+      console.log("is array");
+      this.setState({ filesOrfolders: item.content });
+    } else {
+      console.log("not an array");
+    }
+  }
+
   render() {
     let filesOrfolders = this.state.filesOrfolders;
     return (
@@ -86,10 +122,21 @@ export default class FilesorFolders extends Component {
             className="font-icon-list col-lg-2 col-md-3 col-sm-4 col-xs-6 col-xs-6"
             key={index}
           >
-            <button className="folderButton">
+            <button
+              className="folderButton"
+              onClick={() => {
+                this.extractFiles(item);
+              }}
+            >
               <i className="fa fa-folder  fa-3x" aria-hidden="true" />
             </button>
-            {<input type="text" value={item.name} />}
+            {
+              <input
+                type="text"
+                value={item.name}
+                onChange={this.handleChange}
+              />
+            }
           </div>
         ))}
       </div>
