@@ -14,7 +14,7 @@ export default class ContentArea extends Component {
                     <div className="card" />
                     <div className="content all-icons">
                       <div className="row1">
-                        <FilesorFolders />
+                        <FilesorFolders parentFolder={this.props.parent} />
                       </div>
                     </div>
                   </div>

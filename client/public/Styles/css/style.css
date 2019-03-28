@@ -3447,7 +3447,7 @@ code {
 .all-icons [class*="pe-"] {
   font-size: 40px;
 }
-.all-icons input {
+.all-icons foldername {
   border: 2px;
   width:110px;
   text-align: center;
@@ -4610,6 +4610,7 @@ div#vmap {
   padding: 0;
 border: none;
 background-color: white; 
+float:left;
 }
 @media(max-width:414px){
 	.logo {
@@ -4825,4 +4826,19 @@ background-color: white;
 		width: 16%;
 	}
 }
+.newfoldertext{
+  width:200px;
+  height: 35px;
+  border-radius: 2px;
+  margin-right: 15px;
+  background-color: whitesmoke;
+}
+.fodlername{
+  border: none;
+  padding: inherit;
+
+}
+
+
+
 /*-- //responsive --*/

@@ -6583,4 +6583,21 @@ button.close {
     display: none !important;
   }
 }
+
+.folderpathbutton{
+  width:100px;
+  height:35px;
+  background-color: #00b3b3;
+  border:none;
+  font-size:20px;
+  border:1px solid black;
+}
+.newfolderdiv{
+  text-align: center;
+}
+
+.pathdiv{
+  padding-top: 30px;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

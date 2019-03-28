@@ -1,0 +1,100 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "a",
+      "date": "20/4",
+      "extension": null,
+      "content": []
+    },
+    {
+      "id": 2,
+      "name": "b",
+      "date": "20/4",
+      "extension": ".doc",
+      "content": []
+    },
+    {
+      "id": 3,
+      "name": "c",
+      "date": "20/4",
+      "extension": null,
+      "content": [
+        {
+          "id": 1,
+          "name": "1",
+          "date": "20/4",
+          "extension": ".doc",
+          "content": []
+        },
+        {
+          "id": 2,
+          "name": "2",
+          "date": "20/4",
+          "extension": ".xml",
+          "content": []
+        },
+        {
+          "id": 3,
+          "name": "3",
+          "date": "20/4",
+          "extension": ".zip",
+          "content": []
+        },
+        {
+          "id": 4,
+          "name": "4",
+          "date": "20/4",
+          "extension": ".xlsx",
+          "content": [
+            {
+              "id": 1,
+              "name": "apple",
+              "date": "20/4",
+              "extension": ".doc",
+              "content": []
+            },
+            {
+              "id": 2,
+              "name": "Boy",
+              "date": "20/4",
+              "extension": ".xml",
+              "content": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "d",
+      "date": "20/4",
+      "extension": null,
+      "content": [
+        {
+          "id": 1,
+          "name": "5",
+          "date": "20/4",
+          "extension": null,
+          "content": [
+            {
+              "id": 1,
+              "name": "6",
+              "date": "20/4",
+              "extension": ".doc",
+              "content": []
+            },
+            {
+              "id": 2,
+              "name": "7",
+              "date": "20/4",
+              "extension": ".xml",
+              "content": []
+            }
+          ]
+        }
+      ]
+    },
+    { "id": 5, "name": "e", "date": "20/4", "extension": null, "content": [] }
+  ]
+}
